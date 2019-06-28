@@ -10,13 +10,15 @@ import UIKit
 
 class SecondViewController: UIViewController {
     let picker = UIImagePickerController()
-
+    
     @IBAction func nextImageButtonTouched(_ sender: Any) {
         let fileNumber = Int.random(in: 1...22)
         let fileName = String(format: "%02d", fileNumber)+".jpg"
         self.photoImageView.image = UIImage(named: fileName)
     }
     @IBOutlet weak var photoImageView: UIImageView!
+    
+    // MARK: - selectButtonTouched
     @IBAction func selectButtonTouched(_ sender: Any) {
         let alert = UIAlertController(title: "사진선택", message: "두가지 방법으로 선택해요", preferredStyle: .actionSheet)
         
@@ -46,6 +48,7 @@ class SecondViewController: UIViewController {
         present(picker, animated: false, completion: nil)
     }
     
+    // MARK: - viewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self

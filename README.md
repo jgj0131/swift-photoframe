@@ -635,3 +635,18 @@ let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionS
 ### 결과
 
 ![phone_result3](images/phone_result3.jpeg)
+
+
+
+## ViewController 코드를 작성할 때 고려해야할 점
+
+- 위에서부터 읽을 때 무엇을 먼저 찾게 되는가
+- 라이프사이클 상으로 먼저 호출되는 메소드는 무엇인가
+- 호출하는 관련 함수는 가까이 있는가
+- 사용자가 선택하는 UX 기준 혹은 이벤트 타이밍이 어떤게 더 빠르고 느린가
+
+## Mark지시자
+
+- MARK 지시자를 사용하면, 아래 이미지와 같이 Xcode 편집창 상단 Navigat
+
+![Mark](images/Mark.png)

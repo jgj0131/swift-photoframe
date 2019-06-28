@@ -12,7 +12,7 @@ class MintViewController: UIViewController {
     @IBAction func closeButtonTouched(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    
+
     override func loadView() {
         super.loadView()
         print("민트 view 로드", #file, #line, #function, #column)
