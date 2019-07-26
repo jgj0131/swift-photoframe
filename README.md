@@ -345,7 +345,7 @@ Segue를 제거하고 다음 화면을 보여줄 때 코드로 보여주는 방�
 ### 메소드
 
 - **Init(namedin: compatibleWith: )**나 **init(named: )** 앱의 기본 번들(또는 일부 알려진 번들)에 있는 assest 또는 이미지 파일에서 이미지를 만든다. 이러한 방법은 이미지 데이터를 자동으로 캐시하므로 자주 사용하는 이미지에 특히 권장한다.
-- **imageWithContentsOfFile** 이나 **init(contentsOfFile: )**으로 초기 데이터가 번들에 포함되지 않은 이미지 개체를 만든다. 이 방법은 매번 디스크에서 이미지 데이터를 로드하므로 동일한 이미지를 반복적으로 로드하는데 사용하면 안 된다.
+- imageWithContentsOfFile 이나 init(contentsOfFile: )으로 초기 데이터가 번들에 포함되지 않은 이미지 개체를 만든다. 이 방법은 매번 디스크에서 이미지 데이터를 로드하므로 동일한 이미지를 반복적으로 로드하는데 사용하면 안 된다.
 - **animatedImage(with: duration: )** 그리고 **animatedImageNamed(_: duration: )** 메소드로 다중 시퀀스로 구성된 단일 UIImage 객체를 생성한다.
 - **isEqual(_: )** 메소드로 이미지 데이터를 비교한다.
 
